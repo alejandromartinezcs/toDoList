@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <!--Captura información de Tareas-->
+    <form id="form-tareas">
+        <label for="describeTarea">Tarea</label>
+        <input type"text" id="describeTarea" name="describeTarea">
+        
+        <label for="fechaEntrega">fechaEntrega</label>
+        <input type= "date" id="fechaEntrega" name="fechaEntrega">
+
+        <label for="estado">Estado</label>
+        <input type= "checkbox" id="estado" name="estado">
+
+        
+        
+        <button  type = "submit"    id="btn-reg__tareas">Registrar</button> 
+        <button  type = "reset"     id="btn-reg__limpiar">Limpiar</button> 
+    </form>
+    
+    <!--Contenedor de Tareas-->
+    <div id="spinner" class="d-flex justify-content-center p-4 d-none">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <ul id="lista-tareas" class="list-group"></ul>
+      <script src="main.js" type="module"></script>
+     
+</body>
+</html>
